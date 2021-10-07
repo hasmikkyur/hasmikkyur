@@ -1,0 +1,75 @@
+#Digit Sum 3
+#The program’s input is a three-digit number (do not check that fact, just assume it to be true). Output the sum of its digits.
+
+n=int(input())
+sum=print(n%10+(n//10)%10+n//100)
+
+
+#Area of a right triangle
+
+#The input of the program consists of two integers: the legs of a right
+#triangle. Output the triangle’s area.
+
+a=int(input())
+b=int(input())
+area=a*b/2
+print(area)
+
+
+"""Arithmetic Progression
+
+The program input consists of 3 integer numbers: a1, a2 and n. a1 and
+a2 are the first two members of arithmetic progression. Output the value
+of the n-th member."""
+
+a1=int(input())
+a2=int(input())
+n=int(input())
+an=a1+(a2-a1)*(n-1)
+print(an)
+
+
+"""Century from year
+
+Given a year, return the century it is in. The first century spans from the
+year 1 up to and including the year 100, the second - from the year 101
+up to and including the year 200, etc."""
+
+#1905 20
+#1700 17
+#45   1
+#2000 20
+#2001 21
+year=int(input())
+print((year+99)//100)
+
+"""Two men
+
+Two men start to shoot several cans of Coca-Cola they have put on a
+log. The first man began shooting the cans in order, starting with the
+leftmost, the second man from the rightmost. At some point, they
+simultaneously shot the same last can. And at this point they stop.
+You are given the number of cans the first man has shot, and the
+number of cans the second man has shot. Output the number of cans
+the first man missed because of the second man, and the number of
+cans the second man missed because of the first man."""
+
+first=int(input())
+second=int(input())
+print(second-1,first-1)
+
+"""Knight’s Possible Moves
+
+You are given the coordinates of a cell on a standard chess board: py
+and px. It is guaranteed that the coordinates are correct, i.e. are integers
+from the interval [1,8]. Output all cells that the knight can move in a
+single move(each coordinate pair on separate line). It is guaranteed that
+for a given input cell all 8 moves exist. The output cells order does not
+matter."""
+
+
+px=int(input())
+py=int(input())
+print((px+1,py+2),(px+1,py-2),(px-1,py+2),(px-1,py-2),(px+2,py-1),(px+2,py-1),(px-2,py-1),(px-2,py+1))
+
+
